@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>Family Tree</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1><b>SAINI FAMILY</b></h1>
+<style>
+* {
+margin: 0; 
+padding: 0;
+  }
+
+h1{ 
+color: Grey; 
+text-align:center;
+}
+
+.tree ul {
+padding-top: 20px; position: relative;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+         }
+
+.tree li {
+float: left; text-align: center;
+list-style-type: none;
+position: relative;
+padding: 20px 5px 0 5px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+         }
+
+.tree li::before, .tree li::after{
+content: '';
+position: absolute; top: 0; right: 50%;
+border-top: 1px solid #ccc;
+width: 50%; height: 20px;
+                         }
+
+.tree li::after{
+right: auto; left: 50%;
+border-left: 1px solid #ccc;
+               }
+
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+                     }
+
+.tree li:only-child{ 
+padding-top: 0;
+              }
+
+.tree li:first-child::before, .tree li:last-child::after{
+border: 0 none;
+               }
+
+.tree li:last-child::before{
+border-right: 1px solid #ccc;
+border-radius: 0 5px 0 0;
+-webkit-border-radius: 0 5px 0 0;
+-moz-border-radius: 0 5px 0 0;
+                           }
+.tree li:first-child::after{
+border-radius: 5px 0 0 0;
+-webkit-border-radius: 5px 0 0 0;
+-moz-border-radius: 5px 0 0 0;
+                           }
+
+.tree ul ul::before{
+content: '';
+position: absolute; top: 0; left: 50%;
+border-left: 1px solid #ccc;
+width: 0; height: 20px;
+                   }
+
+.tree li a{
+border: 1px solid #ccc;
+padding: 5px 10px;
+text-decoration: none;
+color: #666;
+font-family: arial, verdana, tahoma;
+font-size: 11px;
+display: inline-block;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+}
+
+.tree li a:hover, .tree li a:hover+ul li a {
+background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+                                           }
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+border-color:  #94a0b4;
+</style>
+<body>
+<div class="tree">
+<ul>
+<li>
+<a href="#">Shri Bani Singh Saini</a>
+<ul>
+                      <li>
+                         <a href="#">Rajendar Saini</a>
+                          <ul>
+                          <li><a href="#">Jitendra Saini</a>
+                             <ul>
+                             <li><a href="#">Pihu</a></li>
+                             </ul>
+                          </li>
+                          <li><a href="#">Dinesh saini</a>
+                              <ul>
+                              <li><a href="#">Duggu</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="#">Amit saini</a>
+                              <ul>
+                              <li><a href="#">Gora</a></li>
+                              </ul>
+                          </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#">Moti lal Saini</a>
+                          <ul>
+                          <li><a href="#">Mukesh Saini</a>
+                              <ul>
+                              <li><a href="#">Pari</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="#">lalit saini</a>
+                              <ul>
+                              <li><a href="#">Laviq</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="#">Deepak saini</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#">Naresh Saini</a>
+                          <ul>
+                          <li><a href="#">Krtika Saini</a>
+                          </li>
+                          <li><a href="#">Sachin saini</a></li>
+                          <li><a href="#">Deepanshu saini</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#">Amarjeet Saini</a>
+                          <ul>
+                          <li><a href="#">Muskan Saini</a></li>
+                          <li><a href="#">Tushar saini</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#">Chiman lal Saini</a>
+                          <ul>
+                          <li><a href="#">Daizy Saini</a>
+                          </li>
+                          <li><a href="#">Mayank saini</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#">Bitu Saini</a>
+                          <ul>
+                          <li><a href="#">Diksha Saini</a>
+                          </li>
+                          <li><a href="#">Ansh saini</a></li>
+                          </ul>
+                      </li> 
+                      <li>
+                          <a href="#">Veena Saini</a>
+                      </li>
+                      <li>
+                          <a href="#">Neelam Saini</a>
+                      </li>                   
+</ul>
+</li>
+</ul>
+</div>
+</body>
+</head>
+</html>
